@@ -1,0 +1,10 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.edit_question_link, .new_choice_link {
+  display: block;
+}
+
+.votes {
+  display: none;
+}

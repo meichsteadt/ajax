@@ -1,0 +1,5 @@
+<div class="row" id="questions">
+  <% @questions.each do |question| %>
+    <%= render 'question', :question => question %>
+  <% end %>
+</div>

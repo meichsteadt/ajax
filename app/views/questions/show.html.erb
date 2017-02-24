@@ -1,0 +1,7 @@
+<h1 id="question<%= @question.id %>"> <%= @question.question %> </h1>
+<p><%= flash[:notice] %></p>
+<div class="choices">
+  <% @question.choices.each do |choice| %>
+    <h3> <%= choice.choice %> </h3>
+  <% end %>
+</div>

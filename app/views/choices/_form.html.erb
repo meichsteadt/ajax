@@ -1,0 +1,11 @@
+<div class="col-md-6">
+<%= render "layouts/errors", :object => @choice %>
+  <%= form_for [@question, @choice], remote: true do |f| %>
+  <div class="form-group">
+    <%= f.label :choice %>
+    <%= f.text_field :choice, class: 'form-control' %>
+  </div>
+    <%= f.submit class: 'btn btn-default' %>
+  <% end %>
+
+</div>

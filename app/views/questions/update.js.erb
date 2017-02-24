@@ -1,0 +1,5 @@
+$(function() {
+  $('#edit_question_<%= @question.id %>').remove();
+  $('#edit_question_link_<%= @question.id %>').show();
+  $('#question<%= @question.id %>').html('<%= @question.question %>')
+})

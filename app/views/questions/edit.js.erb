@@ -1,0 +1,3 @@
+$(function() {
+  $('#edit_question_link_<%= @question.id %>').hide().after('<%= j render "form" %>');
+})

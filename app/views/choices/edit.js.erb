@@ -1,0 +1,6 @@
+$(function() {
+  $('#question<%= @question.id%>').children().children().show();
+  $('#choice<%= @choice.id %>').children('.votes').html('<%= @choice.votes %>');
+  $('#choice<%= @choice.id %>').attr('style', 'background-color:cornflowerblue;');
+  $('#question<%= @question.id%>').children().children().contents().unwrap();
+})

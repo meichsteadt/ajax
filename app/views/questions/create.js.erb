@@ -1,0 +1,5 @@
+$(function() {
+  $('#new_question').remove();
+  $('#new_question_link').show();
+  $('#questions').append('<%= j render(@question) %>');
+})

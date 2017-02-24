@@ -1,0 +1,13 @@
+<div class="col-md-4">
+  <div id="question<%= question.id %>" class="panel">
+    <h1> <%= question.question %> </h1>
+    <% question.choices.each do |choice|%>
+      <div id="choice<%= choice.id %>" class="col-md-6 choice">
+        <%= link_to(edit_question_choice_path(question, choice), remote: true) do %>
+        <p><%= choice.choice %></p>
+        <% end %>
+        <p class="votes"> </p>
+      </div>
+    <% end %>
+  </div>
+</div>
